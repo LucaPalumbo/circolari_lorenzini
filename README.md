@@ -4,11 +4,11 @@
 Non ti preoccupare, ho io la soluzione per te!
 Questo **fantastico** bot telegram ti manderà un messaggio ogni volta che sul sito viene pubblicata una circolare!
 
-##Usage
+## Usage
 Scrivi ```/start``` al bot **__LorenziniBot__** ed il gioco è fatto
 
 ### Info tecniche sul bot
 linguaggio: python3
 modulo per il bot: python-telegram-bot
 modulo per scraping: beautifulsoup
-#database: mysql
+database: mysql
