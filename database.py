@@ -1,20 +1,29 @@
 #!/usr/bin/env python
 import mysql.connector
 from mysql.connector import Error
+import secrets
+from date_parser import dateParser
 
 class dbmanage:
     # Constructor
     def __init__(self):
         try:
-            self.connection = mysql.connector.connect(host='localhost', database='LorenziniCircular', user='root', password='manjaro')
+           self.connection = mysql.connector.connect(host='localhost', database='Lorenzini', user='ubuntu', password=secrets.DB_PASSWORD)
         except:
+            self.connection = None
             print("Error while connecting to DB")
             print("DB connection closed")
 
+    #check id dbmanage is open correctly
+    def isConnected():
+        if(self.connection == None):
+            return False
+        return True
+
     # add circular object to database
     def addCircular(self,circular):
-        query = "INSERT INTO circular VALUES (%s, %s, %s, %s);"
-        datas = (circular.id, circular.name, circular.date, circular.link)
+        query = "INSERT INTO Circolare VALUES (%s, %s, %s, %s);"
+        datas = (circular.id, circular.name, dateParser(circular.date), circular.link)
         try:
             self.cursor = self.connection.cursor(prepared=True)
             self.cursor.execute(query, datas)
@@ -28,14 +37,13 @@ class dbmanage:
 
     # check if circular with specific id is in database already
     def checkCircular(self,circular):
-        query = "SELECT id, name, data, link FROM circular WHERE id=%s;"
+        query = "SELECT * FROM Circolare WHERE id=%s;"
         data = (circular.id ,)
         try:
             self.cursor = self.connection.cursor(prepared=True)
             self.cursor.execute(query, data)
             records = self.cursor.fetchall()
             self.connection.commit()
-            print("SELECT executed")
             self.cursor.close()
             if(len(records) != 0 ):
                 return True
@@ -48,14 +56,13 @@ class dbmanage:
         
     # check if chat is in database already 
     def checkChat(self, chat):
-        query = "SELECT id, type, title FROM chat WHERE id=%s;"
+        query = "SELECT * FROM Chat WHERE id=%s;"
         data = (chat.id ,)
         try:
             self.cursor = self.connection.cursor(prepared=True)
             self.cursor.execute(query, data)
             records = self.cursor.fetchall()
             self.connection.commit()
-            print("SELECT executed")
             self.cursor.close()
             if(len(records) != 0 ):
                 return True
@@ -67,12 +74,11 @@ class dbmanage:
 
     # add chat to database
     def addChat(self, chat):
-        query = "INSERT INTO chat VALUES (%s, %s, %s);"
+        query = "INSERT INTO Chat VALUES (%s, %s, %s);"
         datas = (chat.id, chat.type, chat.title)
         try:
             self.cursor = self.connection.cursor(prepared=True)
             self.cursor.execute(query, datas)
-            print("INSERT executed")
             self.connection.commit()
         except:
             print("Error occurred while trying to executing INSERT query (addChat)")
@@ -81,13 +87,12 @@ class dbmanage:
             self.cursor.close()
     
     def getChats(self):
-        query = "SELECT id, type, title FROM chat"
+        query = "SELECT * FROM Chat"
         try:
             self.cursor = self.connection.cursor(prepared=True)
             self.cursor.execute(query)
             records = self.cursor.fetchall()
             self.connection.commit()
-            print("SELECT executed")
             self.cursor.close()
             if(len(records) != 0 ):
                 return records
@@ -98,7 +103,7 @@ class dbmanage:
             self.cursor.close()
 
     #close database connection
-    def close(self):   
-        if self.connection.is_connected():
+    def close(self):
+        if self.connection!= None and self.connection.is_connected():
             self.connection.close()
 
