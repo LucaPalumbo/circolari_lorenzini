@@ -7,8 +7,10 @@ Questo **fantastico** bot telegram ti manderà un messaggio ogni volta che sul s
 ## Utilizzo
 Scrivi ```/start``` al bot **__@LorenziniBot__** ed il gioco è fatto
 
-### Info tecniche sul bot
+### Info tecniche sul progetto
 Linguaggio: python3\
 Modulo per il bot: python-telegram-bot\
 Modulo per scraping: beautifulsoup\
 Database: mysql
+
+#### Sentiti libero di contribuire al progetto
