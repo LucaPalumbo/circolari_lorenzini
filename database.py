@@ -15,7 +15,7 @@ class dbmanage:
             print("DB connection closed")
 
     #check id dbmanage is open correctly
-    def isConnected():
+    def isConnected(self):
         if(self.connection == None):
             return False
         return True
