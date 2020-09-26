@@ -9,6 +9,9 @@ Scrivi ```/start``` al bot **__@LorenziniBot__** ed il gioco è fatto
 
 ### Info tecniche sul bot
 Linguaggio: python3
+
 Modulo per il bot: python-telegram-bot
+
 Modulo per scraping: beautifulsoup
+
 Database: mysql
