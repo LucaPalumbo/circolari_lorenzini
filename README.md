@@ -5,7 +5,7 @@ Non ti preoccupare, ho io la soluzione per te!\
 Questo **fantastico** bot telegram ti manderà un messaggio ogni volta che sul sito viene pubblicata una circolare!
 
 ## Utilizzo
-Scrivi ```/start``` al bot **__@LorenziniBot__** ed il gioco è fatto
+Scrivi ```/start``` al bot **_@LorenziniBot_** ed il gioco è fatto
 
 ### Info tecniche sul progetto
 Linguaggio: python3\
@@ -14,4 +14,4 @@ Modulo per scraping: beautifulsoup\
 Database: mysql
 
 #### Sentiti libero di contribuire al progetto,
-Per maggiori informazioni contatta __@palumbo_luca___ su instagram. Non sono necessarie skill di programmazione.
+Per maggiori informazioni contatta _@palumbo_luca__ su instagram. Non sono necessarie skill di programmazione.
