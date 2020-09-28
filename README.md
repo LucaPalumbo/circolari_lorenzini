@@ -14,4 +14,4 @@ Modulo per scraping: beautifulsoup\
 Database: mysql
 
 #### Sentiti libero di contribuire al progetto,
-per maggiori informazioni contatta @palumbo_luca_ su instagram
+Per maggiori informazioni contatta __@palumbo_luca___ su instagram. Non sono necessarie skill di programmazione.
