@@ -13,4 +13,5 @@ Modulo per il bot: python-telegram-bot\
 Modulo per scraping: beautifulsoup\
 Database: mysql
 
-#### Sentiti libero di contribuire al progetto
+#### Sentiti libero di contribuire al progetto,
+per maggiori informazioni contatta @palumbo_luca_ su instagram
