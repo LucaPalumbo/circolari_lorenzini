@@ -9,7 +9,7 @@ Questo **fantastico** bot Telegram ti manderà un messaggio contenente numero, t
 > -- [Frank Lloyd Wright](https://it.wikipedia.org/wiki/Frank_Lloyd_Wright)
 
 
-![logo](https://www.google.com/url?sa=i&url=http%3A%2F%2Fpezvaldinievole.altervista.org%2Felenco-istituti-superiori%2F&psig=AOvVaw26RRMvNrBerSrn0hO1hxvJ&ust=1604088409484000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjs35HN2uwCFQAAAAAdAAAAABAD)
+![logo](http://pezvaldinievole.altervista.org/wp-content/uploads/2017/11/lorenzini-1-300x300.png)
 
 ## Utilizzo
 Non c'è niente di più semplice, 
@@ -19,7 +19,7 @@ ti basterà scrivere ```/start``` al bot **_@LorenziniBot_** su Telegram ed il g
 I primi giorni di scuola sono stato informato che i collaboratori scolastici non possono più portare le circolari in classe a noi studenti. *"Cavolo, non abbiamo più nemmeno quei 10 secondi di pausa quando entra Dimitri in classe"*, ho pensato inizialmente.  
 Poi mi è stato detto che, di conseguenza, saremo stati **noi studenti**, da persone "***responsabili***", a controllare periodicamente il sito della scuola per controllare eventuali circolari importanti.  
 *"Cosa? Non mi ricordo nemmeno cosa ho fatto ieri, come posso ricordarmi di controllare il sito della scuola?"*
-Ed è allora che mi è balenata in mente l'idea di automattizzare questo processo cosi noioso! Infondo, perchè spendere 10 secondi per fare un azione ogni tanto quando puoi spendere 10 ore per insegnare a un computer a farlo al posto tuo ?
+Ed è allora che mi è balenata in mente l'idea di automattizzare questo processo cosi noioso! Infondo, perchè spendere 10 secondi per fare un azione ogni tanto quando puoi spendere 10 ore per insegnare a un computer a farla al posto tuo ?
 
 
 ### Info tecniche sul progetto
