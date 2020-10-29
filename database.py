@@ -3,6 +3,7 @@ import mysql.connector
 from mysql.connector import Error
 import secrets
 from date_parser import dateParser
+from circular import Circular
 
 class dbmanage:
     # Constructor
@@ -53,7 +54,30 @@ class dbmanage:
         except:
             print("Error occurred while trying to executing SELECT query (checkCircular)")
             self.cursor.close()
-        
+
+    # get circular using id
+    def getCircularFromId(self, circular_id):
+        query = "SELECT * FROM Circolare WHERE id=%s;"
+        data = (circular_id,)
+        try:
+            self.cursor = self.connection.cursor(prepared=True)
+            self.cursor.execute(query, data)
+            record = self.cursor.fetchall()
+            self.connection.commit()
+            self.cursor.close()
+            if(len(record) != 0 ):
+                id_ = record[0][0]
+                name = record[0][1]
+                date = record[0][2]
+                link = record[0][3]
+                circular = Circular(id_,name,date,link)
+                return circular
+            else:
+                return False
+        except:
+            print("Error occurred while trying to executing SELECT query (getCircularFromId)")
+            self.cursor.close()
+
     # check if chat is in database already 
     def checkChat(self, chat):
         query = "SELECT * FROM Chat WHERE id=%s;"
