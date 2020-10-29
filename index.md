@@ -1,16 +1,17 @@
-# circolari_lorenzini
 ## I bidelli non portano più le circolari in classe per via del covid?
 ## E tu sei già stanco di controllare periodicamente sul sito della scuola?
-Non ti preoccupare, ho io la soluzione per te!\
+Non ti preoccupare, ho io la soluzione per te!  
 Questo **fantastico** bot telegram ti manderà un messaggio contenente numero, titolo, data e link di ogni circolare nel momento in cui viene pubblicata sul sito della scuola.
+
+> Se l'uomo saprà utilizzarla con spirito creativo la macchina sarà il servo e il liberatore dell'umanità
 
 ## Utilizzo
 Scrivi ```/start``` al bot **_@LorenziniBot_** ed il gioco è fatto
 
 ### Info tecniche sul progetto
-Linguaggio: python3\
-Modulo per il bot: python-telegram-bot\
-Modulo per scraping: beautifulsoup\
+Linguaggio: python3  
+Modulo per il bot: python-telegram-bot  
+Modulo per scraping: beautifulsoup  
 Database: mysql
 
 #### Sentiti libero di contribuire al progetto,
