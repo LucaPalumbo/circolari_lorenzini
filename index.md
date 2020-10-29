@@ -2,12 +2,12 @@
 ## I bidelli non portano più le circolari in classe per via del covid?
 ## E tu sei già stanco di controllare periodicamente sul sito della scuola?
 Non ti preoccupare, ho io la soluzione **per te!**    
-Questo **fantastico** bot Telegram ti manderà un messaggio contenente numero, titolo, data e link di ogni circolare nello **stesso momento** in cui viene pubblicata sul [sito della scuola][2].
-[2]: http://istitutolorenzinipescia.edu.it/
+Questo **fantastico** bot Telegram ti manderà un messaggio contenente numero, titolo, data e link di ogni circolare nello **stesso momento** in cui viene pubblicata sul [sito della scuola][1].
+[1]: http://istitutolorenzinipescia.edu.it/
 
 > Se l'uomo saprà utilizzarla con spirito creativo la macchina sarà il servo e il liberatore dell'umanità
-> -- <cite>[Frank Lloyd Wright][1]</cite>
-[1]:https://it.wikipedia.org/wiki/Frank_Lloyd_Wright
+> -- <cite>[Frank Lloyd Wright][2]</cite>
+[2]:https://it.wikipedia.org/wiki/Frank_Lloyd_Wright
 
 ![logo](https://www.google.com/url?sa=i&url=http%3A%2F%2Fpezvaldinievole.altervista.org%2Felenco-istituti-superiori%2F&psig=AOvVaw26RRMvNrBerSrn0hO1hxvJ&ust=1604088409484000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjs35HN2uwCFQAAAAAdAAAAABAD)
 
