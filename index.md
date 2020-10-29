@@ -17,7 +17,8 @@ ti basterà scrivere ```/start``` al bot **_@LorenziniBot_** su Telegram ed il g
 
 ## Nascita
 I primi giorni di scuola sono stato informato che i collaboratori scolastici non possono più portare le circolari in classe a noi studenti. *"Cavolo, non abbiamo più nemmeno quei 10 secondi di pausa quando entra Dimitri in classe"*, ho pensato inizialmente.  
-Poi mi è stato detto che di conseguenza saremmo stati **noi studenti**, da persone "***responsabili***", a controllare periodicamente il sito della scuola per controllare eventuali circolari importanti.  
+Poi mi è stato detto che, di conseguenza, saremo stati **noi studenti**, da persone "***responsabili***", a controllare periodicamente il sito della scuola per controllare eventuali circolari importanti.  
+*"Cosa? Non mi ricordo nemmeno cosa ho fatto ieri, come posso ricordarmi di controllare il sito della scuola?"*
 Ed è allora che mi è balenata in mente l'idea di automattizzare questo processo cosi noioso! Infondo, perchè spendere 10 secondi per fare un azione ogni tanto quando puoi spendere 10 ore per insegnare a un computer a farlo al posto tuo ?
 
 
@@ -31,6 +32,8 @@ Database: mysql
 Invito chiunque a contribuire a questa piccola iniziativa.
 Per contribuire, suggerimenti, bug report o maggiori informazioni contatta _@palumbo_luca__ su instagram. Non sono necessarie skill di programmazione per contribuire.
 
+## Sviluppatori e contributori
+- [Luca Palumbo](lucapalumbo.altervista.org)![linuxPenguin](https://sourceforge.net/images/icon_linux.gif "Utente Linux, ovviamente"), Ideatore
 
 <!--
 ## Welcome to GitHub Pages
