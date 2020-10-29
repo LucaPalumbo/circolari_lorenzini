@@ -4,6 +4,9 @@ Non ti preoccupare, ho io la soluzione per te!
 Questo **fantastico** bot telegram ti manderà un messaggio contenente numero, titolo, data e link di ogni circolare nel momento in cui viene pubblicata sul sito della scuola.
 
 > Se l'uomo saprà utilizzarla con spirito creativo la macchina sarà il servo e il liberatore dell'umanità
+> -- <cite>[Frank Lloyd Wright][1]</cite>
+
+[1]: http://www.quotedb.com/quotes/2112
 
 ## Utilizzo
 Scrivi ```/start``` al bot **_@LorenziniBot_** ed il gioco è fatto
