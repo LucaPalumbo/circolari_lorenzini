@@ -33,7 +33,7 @@ Invito chiunque a contribuire a questa piccola iniziativa.
 Per contribuire, suggerimenti, bug report o maggiori informazioni contatta _@palumbo_luca__ su instagram. Non sono necessarie skill di programmazione per contribuire.
 
 ## Sviluppatori e contributori
-- [Luca Palumbo](lucapalumbo.altervista.org)![linuxPenguin](https://sourceforge.net/images/icon_linux.gif "Utente Linux, ovviamente"), Ideatore
+- [Luca Palumbo](http://lucapalumbo.altervista.org)![linuxPenguin](https://sourceforge.net/images/icon_linux.gif "Utente Linux, ovviamente"), Ideatore
 
 <!--
 ## Welcome to GitHub Pages
