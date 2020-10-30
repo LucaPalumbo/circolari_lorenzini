@@ -5,7 +5,7 @@ Non ti preoccupare, ho io la soluzione **per te!**
 Questo **fantastico** bot Telegram ti manderà un messaggio contenente numero, titolo, data e link di ogni circolare nello **stesso momento** in cui viene pubblicata sul [sito della scuola](http://istitutolorenzinipescia.edu.it/).
 
 
-> Se l'uomo saprà utilizzarla con spirito creativo la macchina sarà il servo e il liberatore dell'umanità
+> Se l'uomo saprà utilizzarla con spirito creativo la macchina sarà il servo e il liberatore dell'umanità  
 > -- [Frank Lloyd Wright](https://it.wikipedia.org/wiki/Frank_Lloyd_Wright)
 
 
