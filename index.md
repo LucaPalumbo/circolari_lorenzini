@@ -1,4 +1,4 @@
-# Circolari Lorenzini, per una scuola sempre connessa
+# LorenziniBot, per una scuola sempre connessa
 ## I bidelli non portano più le circolari in classe per via del covid?
 ## E tu sei già stanco di controllare periodicamente sul sito della scuola?
 Non ti preoccupare, ho io la soluzione **per te!**    
@@ -30,7 +30,7 @@ Database: mysql
 
 #### Sentiti libero di contribuire al progetto,
 Invito chiunque a contribuire a questa piccola iniziativa.
-Per contribuire, suggerimenti, bug report o maggiori informazioni contatta _@palumbo_luca__ su instagram. Non sono necessarie skill di programmazione per contribuire.
+Per contribuire, suggerimenti, bug report o maggiori informazioni contatta *@palumbo_luca_* su instagram. Non sono necessarie skill di programmazione per contribuire.
 
 ## Sviluppatori e contributori
 - [Luca Palumbo](http://lucapalumbo.altervista.org)![linuxPenguin](https://sourceforge.net/images/icon_linux.gif "Utente Linux, ovviamente"), Ideatore
