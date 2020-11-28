@@ -31,7 +31,10 @@ def sendCircularNotification(updater, circular):
     chats = db.getChats()
     db.close()
     for chat in chats:
-        updater.bot.sendMessage(chat_id=chat[0], text=texts.circularText.format(circular.id,circular.name,circular.date,circular.link))
+        try:
+            updater.bot.sendMessage(chat_id=chat[0], text=texts.circularText.format(circular.id,circular.name,circular.date,circular.link))
+        except:
+            print("Exception occurred while sending message.")
 
 #initialize stuff
 updater = Updater(secrets.TOKEN, use_context=True)
