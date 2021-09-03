@@ -9,11 +9,32 @@ class dbmanage:
     # Constructor
     def __init__(self):
         try:
-           self.connection = mysql.connector.connect(host='localhost', database='Lorenzini', user='ubuntu', password=secrets.DB_PASSWORD)
+           #self.connection = mysql.connector.connect(host='localhost', database='Lorenzini', user='ubuntu', password=secrets.DB_PASSWORD)
+           self.connection = mysql.connector.connect(host='mysql', database='Lorenzini', user='root', password=secrets.DB_PASSWORD)
+
         except:
             self.connection = None
             print("Error while connecting to DB")
             print("DB connection closed")
+
+
+    def initializeDatabase(self):
+        query1 = "CREATE TABLE IF NOT EXISTS Chat (id int NOT NULL PRIMARY KEY, tipo varchar(50), titolo varchar(50) );"
+        query2 = "CREATE TABLE IF NOT EXISTS Circolare ( id int NOT NULL PRIMARY KEY, nome varchar(300), data date, link varchar(500) );"
+
+        try:
+            self.cursor = self.connection.cursor(prepared=True)
+            self.cursor.execute(query1)
+            self.connection.commit()
+
+            self.cursor = self.connection.cursor(prepared=True)
+            self.cursor.execute(query2)
+            self.connection.commit()
+        except:
+            print("error occured while initializing DB")
+        finally:
+            self.cursor.close()
+
 
     #check id dbmanage is open correctly
     def isConnected(self):
@@ -50,7 +71,7 @@ class dbmanage:
                 return True
             else:
                 return False
-            
+
         except:
             print("Error occurred while trying to executing SELECT query (checkCircular)")
             self.cursor.close()
@@ -78,7 +99,7 @@ class dbmanage:
             print("Error occurred while trying to executing SELECT query (getCircularFromId)")
             self.cursor.close()
 
-    # check if chat is in database already 
+    # check if chat is in database already
     def checkChat(self, chat):
         query = "SELECT * FROM Chat WHERE id=%s;"
         data = (chat.id ,)
@@ -109,7 +130,7 @@ class dbmanage:
             pass
         finally:
             self.cursor.close()
-    
+
     def getChats(self):
         query = "SELECT * FROM Chat"
         try:
@@ -130,4 +151,3 @@ class dbmanage:
     def close(self):
         if self.connection!= None and self.connection.is_connected():
             self.connection.close()
-

@@ -25,10 +25,10 @@ def ping(update, context):
 def help(update, context):
     update.message.reply_text(texts.help)
 
-# function that send messages to all user with circular information
+# function that send messages to all user with link to school comunication
 def sendCircularNotification(updater, circular):
     db = dbmanage()
-    chats = db.getChats()
+    chats = db.getChats() # get all chat ids
     db.close()
     for chat in chats:
         try:
@@ -36,12 +36,6 @@ def sendCircularNotification(updater, circular):
         except:
             print("Exception occurred while sending message.")
 
-#initialize stuff
-updater = Updater(secrets.TOKEN, use_context=True)
-dispatcher = updater.dispatcher
-dispatcher.add_handler(CommandHandler("start", start))
-dispatcher.add_handler(CommandHandler("ping", ping))
-dispatcher.add_handler(CommandHandler("help", help))
 
 # schedule scraping operation
 def scrapringProtocol():
@@ -51,14 +45,26 @@ def scrapringProtocol():
         sendCircularNotification(updater,c)
 
 
+# initialize Database
+db = dbmanage()
+db.initializeDatabase()
 
-# scheduler 
+
+# link bot commands to functions
+updater = Updater(secrets.TOKEN, use_context=True)
+dispatcher = updater.dispatcher
+dispatcher.add_handler(CommandHandler("start", start))
+dispatcher.add_handler(CommandHandler("ping", ping))
+dispatcher.add_handler(CommandHandler("help", help))
+
+
+
+# scheduler
 sched = BackgroundScheduler()
-sched.add_job(scrapringProtocol,"interval", hours=1, id="job1")
+sched.add_job(scrapringProtocol,"interval", seconds=10, id="job1")
 sched.start()
 
 
 #start bot
 updater.start_polling()
 updater.idle()
-

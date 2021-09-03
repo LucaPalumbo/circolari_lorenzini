@@ -1,0 +1,29 @@
+version: "3.7"
+services:
+  app:
+    #image: python:3.8
+    build: .
+    #command: sh -c "yarn install & yarn run dev"
+    #working_dir: /app
+    command: python3 ./src/bot.py
+    #port:
+    #  - 3000:3000
+
+    volumes:
+      - ./:/code
+    #enviroment:
+    #  MYSQL_HOST: mysql
+    #  MYSQL_USER: root
+    #  MYSQL_PASSWORD: secret
+    #  MYSQL_DB: todos
+
+  mysql:
+    image: mysql:5.7
+    volumes:
+      - circolari_lorenzini-mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: Lorenzini
+
+volumes:
+  circolari_lorenzini-mysql-data:
