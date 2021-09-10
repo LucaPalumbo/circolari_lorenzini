@@ -21,10 +21,10 @@ Per contribuire, suggerimenti, bug report o maggiori informazioni contatta _@pal
 Per prima cosa è necessario decidere dove hostare il bot. Ci sono vari servizi di hosting online. Consiglio di creare un account AWS e attivare una macchina EC2 ubuntu con il piano gratuito per 12 mesi.\
 \
 Dopodiche si deve accedere alla macchina (ti verranno fornite le chiavi di accesso da Amazon). Per farlo bisogna sapere usare un minimo la shell linux.\
-Una volta connessi si deve lanciare in successione:\
+Una volta connessi si deve lanciare in successione:
 - ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.
 - Adesso si dovrà creare un file chiamato `secrets.py` all'interno della cartella `src`.\
-Al suo interno si dovrà scrivere:\
+Al suo interno si dovrà scrivere:
 ```
 DB_PASSWORD = "<password>"
 TOKEN = "<token>"
