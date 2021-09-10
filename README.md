@@ -29,7 +29,7 @@ Al suo interno si dovrà scrivere:
 DB_PASSWORD = "<password>"
 TOKEN = "<token>"
 ```
-  Chiaramente sostituendo `<password>` con una password scelta per il database e `<token>` con il token del bot telegram.
+Chiaramente sostituendo `<password>` con una password scelta per il database e `<token>` con il token del bot telegram.
 - Il passo successivo è modificare il file `docker-compose.yml` in corrispondenza della riga con scritto `MYSQL_ROOT_PASSWORD: secret`. Sostituite la parola `secret` con la password del database scelta prima.
 - ```cd circolari_lorenzini``` per cambiare la directory corrente.
 - ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Con questo comando si avvia uno script che pensa al setup del database e ad avviare il programma.
