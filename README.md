@@ -17,13 +17,13 @@ Database: mysql
 Per contribuire, suggerimenti, bug report o maggiori informazioni contatta _@palumbo_luca__ su instagram. Non sono necessarie skill di programmazione per contribuire.
 
 
-### Set up
+## Set up
 Per prima cosa è necessario decidere dove hostare il bot. Ci sono vari servizi di hosting online. Consiglio di creare un account AWS e attivare una macchina EC2 ubuntu con il piano gratuito per 12 mesi.\
 \
 Dopodiche si deve accedere alla macchina (ti verranno fornite le chiavi di accesso da Amazon). Per farlo bisogna sapere usare un minimo la shell linux.\
 Una volta connessi si deve lanciare in successione:\
 - ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.
 - ```cd circolari_lorenzini``` per cambiare la directory corrente.
-- ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Lo script docker-compose.yml pensa al setup del database e ad avviare il bot.
+- ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Con questo comando si avvia uno script che pensa al setup del database e ad avviare il programma.
 
 A questo punto il bot è perfettamente funzionante!
