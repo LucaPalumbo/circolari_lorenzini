@@ -22,8 +22,8 @@ Per prima cosa è necessario decidere dove hostare il bot. Ci sono vari servizi 
 \
 Dopodiche si deve accedere alla macchina (ti verranno fornite le chiavi di accesso da Amazon). Per farlo bisogna sapere usare un minimo la shell linux.\
 Una volta connessi si deve lanciare in successione:\
-- ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.\
-- ```cd circolari_lorenzini``` per cambiare la directory corrente.\
-- ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Lo script docker-compose.yml pensa al setup del database e ad avviare il bot.\
-\
+- ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.
+- ```cd circolari_lorenzini``` per cambiare la directory corrente.
+- ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Lo script docker-compose.yml pensa al setup del database e ad avviare il bot.
+
 A questo punto il bot è perfettamente funzionante!
