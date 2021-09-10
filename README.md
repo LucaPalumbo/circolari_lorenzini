@@ -25,8 +25,10 @@ Una volta connessi si deve lanciare in successione:\
 - ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.
 - Adesso si dovrà creare un file chiamato `secrets.py` all'interno della cartella `src`.\
 Al suo interno si dovrà scrivere:\
-```DB_PASSWORD = "<password>"
-TOKEN = "<token>"```
+```
+DB_PASSWORD = "<password>"
+TOKEN = "<token>"
+```
 Chiaramente sostituendo `<password>` con una password scelta per il database e `<token>` con il token del bot telegram.
 - Il passo successivo è modificare il file `docker-compose.yml` in corrispondenza della riga con scritto `MYSQL_ROOT_PASSWORD: secret`. Sostituite la parola `secret` con la password del database scelta prima.
 - ```cd circolari_lorenzini``` per cambiare la directory corrente.
