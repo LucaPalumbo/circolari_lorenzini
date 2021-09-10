@@ -23,6 +23,12 @@ Per prima cosa è necessario decidere dove hostare il bot. Ci sono vari servizi 
 Dopodiche si deve accedere alla macchina (ti verranno fornite le chiavi di accesso da Amazon). Per farlo bisogna sapere usare un minimo la shell linux.\
 Una volta connessi si deve lanciare in successione:\
 - ```git clone https://github.com/LucaPalumbo/circolari_lorenzini.git``` per clonare questa repository.
+- Adesso si dovrà creare un file chiamato `secrets.py` all'interno della cartella `src`.\
+Al suo interno si dovrà scrivere:\
+```DB_PASSWORD = "<password>"
+TOKEN = "<token>"```
+Chiaramente sostituendo `<password>` con una password scelta per il database e `<token>` con il token del bot telegram.
+- Il passo successivo è modificare il file `docker-compose.yml` in corrispondenza della riga con scritto `MYSQL_ROOT_PASSWORD: secret`. Sostituite la parola `secret` con la password del database scelta prima.
 - ```cd circolari_lorenzini``` per cambiare la directory corrente.
 - ```docker-compose up -d``` per buildare il container. Potrebbe essere necessario prima installare docker. Con questo comando si avvia uno script che pensa al setup del database e ad avviare il programma.
 
