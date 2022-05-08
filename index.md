@@ -16,10 +16,10 @@ Non c'è niente di più semplice,
 ti basterà scrivere ```/start``` al bot **_@LorenziniBot_** su Telegram ed il gioco è fatto!
 
 ## Nascita
-I primi giorni di scuola sono stato informato che i collaboratori scolastici non possono più portare le circolari in classe a noi studenti. *"Cavolo, non abbiamo più nemmeno quei 10 secondi di pausa quando entra Dimitri in classe"*, ho pensato inizialmente.  
-Poi mi è stato detto che, di conseguenza, saremo stati **noi studenti**, da persone "***responsabili***", a controllare periodicamente il sito della scuola per controllare eventuali circolari importanti.  
-*"Cosa? Non mi ricordo nemmeno cosa ho fatto ieri, come posso ricordarmi di controllare il sito della scuola?"*  
-Ed è allora che mi è balenata in mente l'idea di automattizzare questo processo cosi noioso! Infondo, perchè spendere 10 secondi per fare un azione ogni tanto quando puoi spendere 10 ore per insegnare a un computer a farla al posto tuo ?
+I primi giorni di scuola sono stato informato che i collaboratori scolastici non possono più portare le circolari in classe a noi studenti. *"Cavolo, non verrà più Dimitri a interrompere la lezione!"*
+Poi mi è stato detto che, di conseguenza, saremmo stati **noi studenti**, a dover controllare periodicamente il sito della scuola per controllare eventuali circolari importanti.  
+*"Cosa?"*
+Ed è allora che ho deciso di automattizzare questo processo cosi noioso! Infondo, perchè spendere 10 secondi per fare un azione ogni tanto quando puoi spendere 4 ore per insegnare a un computer a farla al posto tuo ?
 
 
 ### Info tecniche sul progetto
@@ -35,42 +35,4 @@ Per contribuire, suggerimenti, bug report o maggiori informazioni contatta *@pal
 ## Sviluppatori e contributori
 - [Luca Palumbo](http://lucapalumbo.altervista.org)![linuxPenguin](https://sourceforge.net/images/icon_linux.gif "Utente Linux, ovviamente"), Ideatore
 
-<!--
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/LucaPalumbo/circolari_lorenzini/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LucaPalumbo/circolari_lorenzini/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
--->
